@@ -17,5 +17,7 @@ public class PemilihanPercobaan103 {
         //Output
         System.out.println("Ternary operator");
         System.out.print(angka + " adalah " + hasil);
+
+        i.close();
     }
 }
