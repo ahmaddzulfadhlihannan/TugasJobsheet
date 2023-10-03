@@ -18,6 +18,9 @@ public class Pemilihan2Percobaan103 {
             if ((tahun % 100) != 0) {
                 System.out.print("Tahun Kabisat");
             } 
+            else {
+                System.out.print("Bukan tahun kabisat");
+            }
         }
         else {
             System.out.print("Bukan tahun kabisat");
@@ -25,8 +28,6 @@ public class Pemilihan2Percobaan103 {
 
         //Tutup Scanner
         input03.close();
-
-        //entah apa yang merasuki mueh
 
     }
 }
