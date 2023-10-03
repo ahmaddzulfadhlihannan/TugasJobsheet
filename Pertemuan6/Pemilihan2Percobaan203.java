@@ -22,11 +22,16 @@ public class Pemilihan2Percobaan203 {
 
         //Pemilihan berasarang
         if (totSudut == 180) {
-            if ((sudut1 == 90) || (sudut2 == 90) || (sudut3 == 90)) {
-                System.out.print("Segitiga tersebut adaah segitiga siku-siku");
+            if ((sudut1 == 60) && (sudut2 == 60) && (sudut3 == 60)) {
+                System.out.print("Segitiga tersebut adalah segitiga sama sisi");
             }
+            else {
+                if ((sudut1 == sudut2) || (sudut2 == sudut3) || (sudut3 == sudut1 )) {
+                    System.out.print("Segitiga tersebut adalah segitiga sama kaki");
+                }
                 else {
-                System.out.print("Segitiga tersebut bukan segitiga siku-siku");
+                    System.out.print("Segitiga tersebut adalah segitiga sembarang");
+                }
             }   
         }
         else {
