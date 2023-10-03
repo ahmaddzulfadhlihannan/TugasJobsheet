@@ -14,9 +14,14 @@ public class Pemilihan2Percobaan103 {
         tahun = input03.nextInt();
 
         //Pemilihan bersarang
-        if ((tahun % 4) == 0) {
-            if ((tahun % 100) != 0) {
-                System.out.print("Tahun Kabisat");
+        if ((tahun % 400) == 0) {
+            if ((tahun % 100) == 0) {
+                if ((tahun % 4 ) == 0) {
+                    System.out.print("Tahun Kabisat");
+                }
+                else {
+                    System.out.print("Bukan tahun kabisat");    
+                }
             } 
             else {
                 System.out.print("Bukan tahun kabisat");
