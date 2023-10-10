@@ -7,7 +7,7 @@ public class ForKelipatan03 {
         Scanner scan = new Scanner(System.in);
         
         //Variabel
-        int kelipatan, jumlah = 0, counter = 0;
+        int kelipatan, jumlah = 0, counter = 0, rataRata = 0;
 
         //Input
         System.out.print("Masukkan bilangan kelipatan 1- 9\t:\t");
@@ -20,9 +20,13 @@ public class ForKelipatan03 {
                 counter++;
             }
         }
+        if (counter != 0) {
+            rataRata = jumlah / counter;
+        }
 
         System.out.printf("Banyaknya bilangan %d dari 1 sampai 50 adalah %d\n", kelipatan, counter);
         System.out.printf("Total bilangan kelipatan %d dari 1 sampai 50 adalah %d\n", kelipatan, jumlah);
+        System.out.printf("Rata-rata dari seluruh  bilangan kelipatan %d dari 1 sampai 50 adalah %d\n", kelipatan, rataRata);
 
         //Tutup scanner
         scan.close();
