@@ -26,7 +26,10 @@ public class DoWhileCuti03 {
                     System.out.println("Sisa jatah cuti\t\t\t:\t" + jatahCuti);
                     }
                 }
-                else {
+            else if (konfirmasi.equalsIgnoreCase("t") ) {
+                break;
+            }    
+            else {
                     System.out.println("Sisa jatah cuti anda tidak mencukupi");
                     break;
                 }
