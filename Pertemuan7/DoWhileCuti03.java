@@ -24,14 +24,16 @@ public class DoWhileCuti03 {
                 if (jumlahHari <= jatahCuti) {
                     jatahCuti -= jumlahHari;
                     System.out.println("Sisa jatah cuti\t\t\t:\t" + jatahCuti);
+                    }
                 }
                 else {
                     System.out.println("Sisa jatah cuti anda tidak mencukupi");
+                    break;
                 }
 
             }
-        }
-        while (jatahCuti > 0);
+        
+        while (jatahCuti > 0); 
 
         //Tutup scanner
         sc.close(); 
