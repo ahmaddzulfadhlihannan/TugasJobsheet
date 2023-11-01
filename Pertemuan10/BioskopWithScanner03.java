@@ -43,16 +43,24 @@ public class BioskopWithScanner03 {
                     break;
                 case 2:
                     System.out.println("Daftar penonton : ");
-                    for (int i = 0; i < 4; i++) {
-                        for (int j = 0; j < 2; j++) {
-                            if (penonton[i][j] != null) {
-                                System.out.println(penonton[i][j] + " : " + "Baris " + (i + 1) + ", Kolom " + (j + 1));
-                            }
-                            else {
-                                System.out.println("*** : " + "Baris " + (i + 1) + ", Kolom " + (j + 1));
-                            }
-                        }
+                    for (baris = 0; baris < 4; baris++) {
+                    if (penonton[baris][0] != null) {
+                        System.out.println(penonton[baris][1] + " : Baris-" + (baris+1) + ", kolom-1" );
                     }
+                    else {
+                        System.out.println("*** : Baris-" + (baris+1) + ", kolom-1" );
+                        
+                    }
+                    }
+                    for (baris = 0; baris < 4; baris++) {
+                    if (penonton[baris][1] != null) {
+                        System.out.println(penonton[baris][2] + " : Baris-" + (baris+1) + ", kolom-2" );
+                    }
+                    else {
+                        System.out.println("*** : Baris-" + (baris+1) + ", kolom-2" );
+                        
+                    }
+                    } 
                     break;
                 case 3:
                     sc.close();
